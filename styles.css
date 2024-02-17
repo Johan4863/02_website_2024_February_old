@@ -1,0 +1,293 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basic Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #2b2b2b; /* Dark gray background */
+    margin: 0;
+    padding: 0;
+    color: #fff; /* White text */
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+header, footer {
+    background: #1f1f1f; /* Darker background for header and footer */
+    color: #fff;
+    padding: 1rem 0;
+}
+
+header h1 {
+    float: left;
+    color: #ff9522; /* Neon orange */
+}
+
+nav ul {
+    float: right;
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ff9522; /* Neon orange on hover */
+}
+
+section {
+    padding: 60px 0;
+}
+
+h2 {
+    margin-bottom: 20px;
+    position: relative;
+    color: #ff9522; /* Neon orange */
+}
+
+h2::before {
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 2px;
+    background-color: #ff9522; /* Neon orange */
+    bottom: -10px;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.social-icons {
+    margin-top: 20px;
+}
+
+.social-icon {
+    font-size: 24px;
+    margin-right: 10px;
+    color: #ff9522; /* Neon orange */
+    transition: all 0.3s ease;
+}
+
+.social-icon:hover {
+    color: #ffcc00; /* Yellow on hover */
+}
+
+/* Hero Section */
+
+#black-text {
+    color:#2b2b2b;
+}
+
+#hero {
+    background-color: #f2f2f2;
+    text-align: center;
+    padding: 100px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-content {
+    max-width: 600px;
+    margin: auto;
+    position: relative;
+    z-index: 1;
+}
+
+.hero-content h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    animation: fadeInUp 1s ease forwards;
+    opacity: 0;
+    color: #ff9522; /* Neon orange */
+}
+
+.hero-content p {
+    font-size: 18px;
+    margin-bottom: 40px;
+    animation: fadeInUp 1s ease forwards 0.5s;
+    opacity: 0;
+}
+
+.btn {
+    display: inline-block;
+    background: #ff9522; /* Neon orange */
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    opacity: 0;
+    animation: fadeInUp 1s ease forwards 1s;
+}
+
+.btn:hover {
+    background: #ffcc00; /* Yellow on hover */
+}
+
+/* Services Section */
+#services {
+    background-color: #f2f2f2;
+    color: #1f1f1f;
+}
+
+.service {
+    text-align: center;
+    margin-bottom: 40px;
+    position: relative;
+    animation: fadeInUp 1s ease forwards;
+    opacity: 0;
+}
+
+.service i {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #ff9522; /* Neon orange */
+}
+
+.service h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.service p {
+    font-size: 16px;
+    color: #686868; /* Light gray */
+}
+
+/* Skills Section */
+.skill {
+    margin-bottom: 40px;
+}
+
+.skill h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #ff9522; /* Neon orange */
+}
+
+.skill ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.skill ul li {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #ccc; /* Light gray */
+}
+
+/* Animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Projects Section */
+.project {
+    display: flex;
+    margin-bottom: 40px;
+}
+
+.project-image {
+    flex: 0 0 40%; /* 40% width */
+    margin-right: 20px;
+}
+
+.project-image img {
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Box shadow for image */
+}
+
+.project-details {
+    flex: 1; /* Take remaining width */
+}
+
+.project-details h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #ff9522; /* Neon orange */
+}
+
+.project-details p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: #ccc; /* Light gray */
+}
+
+.project-details .btn {
+    background: #ff9522; /* Neon orange */
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.project-details .btn:hover {
+    background: #ffcc00; /* Yellow on hover */
+}
+
+/* Prices Section */
+#prices {
+    background-color: #f2f2f2; /* Light gray background */
+    padding: 60px 0;
+}
+
+.price-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Box shadow */
+    padding: 40px;
+    text-align: center;
+}
+
+.price-card h3 {
+    color: #333; /* Dark text */
+    margin-bottom: 20px;
+}
+
+.price-card p {
+    color: #666; /* Medium gray text */
+    margin-bottom: 15px;
+}
+
+#contact {
+    background-color: #f2f2f2;
+    color: #1f1f1f;
+}
+
+.contact-container {
+    background-color:#fff;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.services-container {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+}

@@ -1,0 +1,111 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basic Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9; /* Light gray background */
+    margin: 0;
+    padding: 0;
+    color: #333; /* Dark text */
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+}
+
+header h1 {
+    float: left;
+}
+
+nav ul {
+    float: right;
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ffcc00; /* Yellow on hover */
+}
+
+section {
+    padding: 60px 0;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+/* Features Section */
+ul {
+    list-style-type: none;
+    margin-left: 20px;
+}
+
+/* Screenshots Section */
+.screenshot {
+    margin-bottom: 20px;
+}
+
+.screenshot img {
+    max-width: 100%;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Box shadow for image */
+}
+
+/* Contact Section */
+#contact p {
+    margin-bottom: 10px;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+/* Return Button */
+#return-to-main {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+}
+
+.return-btn {
+    display: inline-block;
+    background: #ff9522; /* Neon orange */
+    color: #fff;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Box shadow */
+    transition: all 0.3s ease;
+}
+
+.return-btn:hover {
+    background: #ffcc00; /* Yellow on hover */
+    transform: translateY(-3px);
+}

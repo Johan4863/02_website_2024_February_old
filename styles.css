@@ -262,7 +262,6 @@ h2::before {
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Box shadow */
     padding: 40px;
-    margin-top: 0px;
 }
 
 .price-image {
@@ -273,11 +272,6 @@ h2::before {
 .price-image img {
     max-width: 100%;
     border-radius: 5px;
-    width: 100%; /* Adjust width */
-    height: auto; /* Maintain aspect ratio */
-    margin-bottom: -80px;
-    margin-left: -20px;
-    margin-top: -20px;
 }
 
 .price-details {
@@ -313,9 +307,3 @@ h2::before {
     padding: 20px;
 }
 
-#prices img{
-    margin-bottom: -340px;
-    margin-left: 180px;
-    max-width: 250px;
-    max-height: auto;
-}

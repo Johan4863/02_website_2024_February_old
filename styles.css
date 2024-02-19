@@ -257,22 +257,43 @@ h2::before {
 }
 
 .price-card {
+    display: flex;
     background-color: #fff;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Box shadow */
     padding: 40px;
-    text-align: center;
+    margin-top: 0px;
 }
 
-.price-card h3 {
+.price-image {
+    flex: 0 0 30%; /* 30% width */
+    margin-right: 20px;
+}
+
+.price-image img {
+    max-width: 100%;
+    border-radius: 5px;
+    width: 100%; /* Adjust width */
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: -80px;
+    margin-left: -20px;
+    margin-top: -20px;
+}
+
+.price-details {
+    flex: 1; /* Take remaining width */
+}
+
+.price-details h3 {
     color: #333; /* Dark text */
     margin-bottom: 20px;
 }
 
-.price-card p {
+.price-details p {
     color: #666; /* Medium gray text */
     margin-bottom: 15px;
 }
+
 
 #contact {
     background-color: #f2f2f2;

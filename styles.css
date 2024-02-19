@@ -265,13 +265,13 @@ h2::before {
 }
 
 .price-image {
-    
+    flex: 0 0 30%; /* Set width of the image container */
     margin-right: 20px;
 }
 
 .price-image img {
-    max-width: 250px;
-    max-height: auto;
+    max-width: 100%; /* Ensure image doesn't exceed container width */
+    height: auto; /* Maintain aspect ratio */
     border-radius: 5px;
 }
 

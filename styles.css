@@ -265,7 +265,7 @@ h2::before {
 }
 
 .price-image {
-    flex: 0 0 30%; /* 30% width */
+    
     margin-right: 20px;
 }
 
